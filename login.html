@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Charset Meta Tag -->
+        <meta charset="utf-8"/>
+        <!-- Descripton Meta Tag -->
+        <meta name="description" content="Welcome To Our Courses Site"/>
+        <!-- Page Title -->
+        <title>El-Tahawy Login</title>
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.css">
+        <!-- Normalize Style File -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Google Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+        <!-- Main Style File -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- Login Style File -->
+        <link rel="stylesheet" href="css/login.css"/>
+    </head>
+    <body>
+        <!-- Start Navigation Bar -->
+
+        <nav>
+            <div class="container">
+                <div class="brand">
+                    <h1> <a href="index.html" class="clear-anchor main-red">El-Tahawy Online Coures</a> </h1>
+                </div>
+                <div class="categories">
+                    <i class="fas fa-th"></i>
+                    <span>Categories</span>
+                </div>
+                <div class="search">
+                    <span class="search">
+                        <input type="text" name="search" placeholder="search"/>
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <div class="more">
+                    <h3> <a href="login.html" class="clear-anchor"> El-Tahawy For Business </a> </h3>
+                    <h3> <a href="login.html" class="clear-anchor"> Teach On El-Tahawy </a> </h3>
+                </div>
+            </div>
+        </nav>
+
+        <!-- End Navigation Bar -->
+
+        <!-- Start Sign Login Form -->
+
+        <div class="sign-form">
+            <div class="overlay">
+                <div class="container">
+                    <h1 class="text-center main-red">Log In</h1>
+                    <form action="index.html" method="post" onsubmit="return validation_log()">
+
+                        <div class="form-cont">
+
+                            <label>Enter Your E-mail</label>
+                            <input type="text" value="" placeholder="ex.Seif" id="logUserName" name="login_user_name"/>
+
+                            <label>Enter Your Password</label>
+                            <input type="password" value="" placeholder="ex.564ser" id="logPassword" name="login_user_password"/>
+
+                            <select class="user-type" name="">
+                                <option>Student</option>
+                                <option>Instructor</option>
+                                <option>Business</option>
+                            </select>
+
+                        </div>
+
+                        <div class="clear-fix"></div>
+
+                        <input type="submit" value="Log In" class="main-btn" id="logBtn" name="Log_In"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Log In Form -->
+
+        <script src="js\log-in-validation.js"></script>
+    </body>
+</html>

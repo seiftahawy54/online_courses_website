@@ -1,0 +1,88 @@
+/* Start Modified Main Page */
+
+
+nav {
+    background-color: #FFF;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+}
+
+nav div.search {
+    width: 43.5%;
+}
+
+
+/* End Modified Main Page */
+/* Start Sign Up Form */
+
+.sign-form {
+    overflow: hidden;
+    background: url('../images/sign-log.jpg') center top no-repeat;
+    background-size: cover;
+    height: 681px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+}
+
+.sign-form h1 {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.sign-form form {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sign-form form label,
+.sign-form form input { display: block;margin: auto; }
+
+.sign-form form label
+{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    color: #FFF;
+    font-size: 25px;
+}
+
+.sign-form form input {
+    width: 40%;
+    height: 33px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 0;
+    font-size: 19px;
+}
+
+.sign-form form select {
+    margin-left: 30%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #FFF;
+    border: 0;
+    color: #ff2929;
+    font-size: 18px;
+    padding: 5px 50px 5px 2px;
+}
+
+.sign-form form input[type="submit"] {
+    margin: 50px auto;
+    width: 15%;
+    height: 50px;
+    font-size: 19px;
+}
+
+.sign-form form input[type="submit"]:hover {
+    background-color: #b20000;
+    cursor: pointer;
+}
+
+/* End Sign Up Form */

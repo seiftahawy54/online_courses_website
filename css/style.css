@@ -1,0 +1,499 @@
+/* Start Main Page Rules */
+* {
+    box-sizing: border-box;
+}
+
+body { font-family: 'Roboto', sans-serif; }
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.clear-fix {clear: both;}
+
+/* End Main Page Rules */
+/* Start Navigation Bar */
+
+nav {
+    overflow: hidden;
+    padding: 10px 0;
+    color: #505763;
+}
+
+nav div:not(.container) {
+    float: left;
+}
+
+nav .brand {
+    color: #F00;
+    width: 20%;
+    font-weight: bold;
+}
+
+nav .categories {
+    line-height: 2;
+    width: 10%;
+}
+
+nav .search {
+    line-height: 3;
+    width: 29%;
+    margin-right: 1%;
+    background-color: #F2F3F5;
+}
+
+nav .search input {
+    border: 0;
+    color: #505763;
+    margin-left: 10px;
+    background-color: #F2F3F5;
+    outline: 0;
+}
+
+nav .search i {
+    color: #FFF;
+    color: #F00;
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    border: 0;
+}
+
+nav .more {
+    width: 24.5%;
+    margin: 0 0.5%;
+}
+
+nav .more h3 {
+    margin: 5px 3px 3px 3px;
+    padding: 10px 5px;
+    border-radius: 2px;
+    font-size: 13px;
+    display: inline-block;
+    border: 1px solid #505763;
+    transition: all 0.5s ease-in-out;
+}
+
+nav .more h3:hover {
+    background-color: #505763;
+    color: #F2F3F5;
+    cursor: pointer
+}
+
+nav .more h3:hover a {
+    color: #F2F3F5;
+}
+
+nav .links {
+    line-height: 3;
+    margin-left: 5px;
+}
+
+nav .links .fa-shopping-cart {
+    color: #505763;
+    transition: all 0.5s ease-in-out;
+    height: 30px;
+    width: 30px;
+    padding-left: 5px;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+nav .links .fa-shopping-cart:hover {
+    color: #FFF;
+    background-color: #505763;
+}
+
+nav .links .login,
+nav .links .signup {
+    margin-left: 10px;
+    background-color: #FFF;
+    border: 1px solid #505763;
+    padding: 10px 5px;
+    font-size: 13px;
+    border-radius: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+nav .links .signup {
+    background-color: #F00;
+    color: #FFF;
+    border: 1px solid #F00;
+}
+
+nav .links .login:hover {
+    background-color: #505763;
+    color: #FFF;
+    cursor: pointer;
+}
+
+nav .links .signup:hover {
+    background-color: #b20000;
+    color: #FFF;
+    cursor: pointer;
+}
+
+nav h1, h3 {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+nav h3 {
+    font-size: 14px;
+}
+
+/* End Navigation Bar */
+/* Start Main Content Section */
+
+.main-content {
+    padding: 10px;
+    overflow: hidden;
+    background: url("../images/lap.jpg") fixed no-repeat;
+    background-size: cover;
+    color: #FFF;
+    height: 500px
+}
+
+.main-content h1 {
+    font-size: 40px;
+    margin-top: 140px;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin-top: 50px;
+    width: 37%;
+    line-height: 2;
+}
+
+.main-content .user_search {
+    background-color: #FFF;
+    width: 37%;
+    border-radius: 2px;
+}
+
+.main-content .user_search input {
+    width: 400px;
+    padding: 10px 0 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.main-content .user_search input::placeholder {
+    font-size: 20px;
+}
+
+.main-content .user_search i {
+    font-size: 20px;
+    color: #FFF;
+    line-height: 19px;
+    background-color: #F00;
+    float: right;
+    padding: 10px 12px 10px 12px;
+    border-radius: 2px;
+}
+
+/* End Main Content Section */
+/* Start Most Viewed Courses */
+
+.most-watched {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.most-watched h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.most-watched .course {
+    width: 18%;
+    margin-left: 2%;
+    margin-top: 15px;
+    float: left;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.most-watched .course:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: scale(1.01, 1.01)
+}
+
+.most-watched .course img {
+    width: 100%;
+    object-fit: cover
+}
+
+.most-watched .course h3 {
+    font-size: 15px;
+    color: #29303B;
+    padding-left: 5px;
+    margin-bottom: 0;
+}
+
+.most-watched .course .instructor {
+    color: #686F7A;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.most-watched .course .rating {
+    color: #F4C150;
+    font-size: 12px;
+    display: inline-block;
+    margin: 5px 0;
+    padding-left: 5px;
+}
+
+.most-watched .course .price {
+    float: right;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* End Most Viewed Courses */
+/* Start Tutorials */
+
+.tuts {
+    padding: 30px 0;
+}
+
+.tuts ul,
+.tuts ol {
+    padding: 0;
+    margin: 0;
+}
+
+.tuts ul li,
+.tuts ol li {
+    display: inline-block;
+    float: left;
+    width: 49%;
+    margin-left: 1%;
+    margin-top: 15px;
+}
+
+.tuts ul li iframe,
+.tuts ol li iframe {
+    width: 100%;
+    height: 350px;
+}
+
+/* End Tutorials */
+/* Start Categories */
+
+.categories {
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.categories h1 {
+    margin-top: 30px;
+}
+
+.categories table {
+    width: 100%;
+    border: 0;
+}
+
+.categories table td {
+    width: 23%;
+    border: 0;
+    display: inline-block;
+    margin: 15px 0 15px 2%;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
+    transition: all 0.5s ease-in-out;
+    padding: 15px 0 25px 5px;
+}
+
+.categories table td i {
+    padding-right: 10px;
+}
+
+.categories table td:hover {
+    box-shadow: 0 0 1px 1px rgba(20,23,28,0.2), 0 3px 1px 0 rgba(20,23,28,0.2);
+    cursor: pointer;
+    transform: scale(1.1, 1.1)
+}
+
+/* End Categories */
+/* Start Testimonials */
+
+.testim {
+    padding: 10px 0 40px;
+    background-color: #F5F9F9;
+    overflow: hidden;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.testim .client {
+    float: left;
+    width: 32.333%;
+    margin-left: 1%;
+    margin-top: 15px;
+    border: 1px solid #DDD;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 0 10px 1px rgba(20,23,28,0.1), 0 3px 10px 0 rgba(20,23,28,0.1);
+}
+
+.testim .client img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.testim .client span {
+    position: relative;
+    top: -30px;
+    left: 20px;
+    display: inline-block;
+}
+
+.testim .sponsers {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.testim .sponsers img {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 30px;
+}
+
+.testim .teach-with-us {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.testim .teach-with-us .teach {
+    float: left;
+    width: 50%;
+    border-right: 1px solid #bebebe;
+}
+
+.testim .teach-with-us .teach h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #4b4b4b;
+}
+
+.testim .teach-with-us .teach p {
+    width: 50%;
+    font-size: 16px;
+    color: #29303B;
+    line-height: 2;
+    margin: 30px auto;
+}
+
+.testim .teach-with-us .teach a button {
+    background-color: #ff2929;
+    border-radius: 3px;
+    border: 0;
+    color: #FFF;
+    transition: all 0.3s ease-in-out;
+    padding: 15px 10px;
+}
+
+.testim .teach-with-us .teach a button:hover {
+    background-color: #b20000;
+    cursor: pointer;
+}
+
+
+.testim .teach-with-us .business {
+    float: left;
+    width: 50%;
+}
+
+.testim .teach-with-us .business h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #4b4b4b;
+}
+
+.testim .teach-with-us .business p {
+    width: 50%;
+    font-size: 16px;
+    line-height: 2;
+    margin: 30px auto;
+}
+
+.testim .teach-with-us .business a button {
+    background-color: #ff2929;
+    border-radius: 3px;
+    border: 0;
+    color: #FFF;
+    transition: all 0.3s ease-in-out;
+    padding: 15px 10px;
+}
+
+.testim .teach-with-us .business a button:hover {
+    background-color: #b20000;
+    cursor: pointer;
+}
+
+/* End Testimonials */
+/* Start Footer Section */
+
+footer {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+footer table {
+    width: 100%;
+    overflow: hidden;
+}
+
+footer table td {
+    width: 33.3333%;
+    float: left;
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer .copy-rights {
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid #BEBEBE;
+}
+
+/* End Footer Section */
+
+/* Start My Framework */
+
+.clear-anchor {
+    text-decoration: none;
+}
+
+.get-bold { font-weight: bold; }
+
+.main-btn {
+    background-color: #ff2929;
+    border-radius: 3px;
+    border: 0;
+    color: #FFF;
+    transition: all 0.3s ease-in-out;
+    padding: 15px 10px;
+}
+
+.main-color {color: #6b6c6e}
+
+.text-center {text-align: center;}
+
+.main-red {color: #ff2929}
+
+/* End My Framework */

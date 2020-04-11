@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Charset Meta Tag -->
+        <meta charset="utf-8"/>
+        <!-- Descripton Meta Tag -->
+        <meta name="description" content="Welcome To Our Courses Site"/>
+        <!-- Page Title -->
+        <title>El-Tahawy Sign Up</title>
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.css">
+        <!-- Normalize Style File -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Google Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+        <!-- Main Style File -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- Sign Up Style File -->
+        <link rel="stylesheet" href="css/signup.css"/>
+    </head>
+    <body>
+
+        <!-- Start Navigation Bar -->
+
+        <nav>
+            <div class="container">
+                <div class="brand">
+                    <h1> <a href="index.html" class="clear-anchor main-red">El-Tahawy Online Coures</a> </h1>
+                </div>
+                <div class="categories">
+                    <i class="fas fa-th"></i>
+                    <span>Categories</span>
+                </div>
+                <div class="search">
+                    <span class="search">
+                        <input type="text" name="search" placeholder="search"/>
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <div class="more">
+                    <h3> <a href="login.html" class="clear-anchor"> El-Tahawy For Business </a> </h3>
+                    <h3> <a href="login.html" class="clear-anchor"> Teach On El-Tahawy </a> </h3>
+                </div>
+            </div>
+        </nav>
+
+        <!-- End Navigation Bar -->
+        <!-- Start Sign Up Form -->
+
+        <div class="sign-form">
+            <div class="overlay">
+                <div class="container">
+                    <h1 class="text-center main-red">Sign Up Now It's Free !</h1>
+                    <form action="index.html" method="post" onsubmit="return validation()" novalidate>
+                        <div class="first-sec">
+                            <label>
+                                <span class="main-red">*</span>
+                                Enter Your User Name
+                            </label>
+                            <input type="text" placeholder="ex.Seif" id="userName" name="signup_user_name"/>
+
+                            <label>
+                                <span class="main-red">*</span>
+                                Enter Your Password
+                            </label>
+                            <input type="password" placeholder="ex.564ser" id="userPassword" name="signup_user_password"/>
+
+                            <label>
+                                <span class="main-red">*</span>
+                                Re-enter Your Password
+                            </label>
+
+                            <label>
+                                <span class="main-red">*</span>
+                                <input type="password" id="userRePassword" name="signup_user_re_password"/>
+                                Enter Your E-mail
+                            </label>
+                            <input type="email" placeholder="ex.eltahawy@gmail.com" name="signup_user_email"/>
+                        </div>
+                        <div class="sec-sec">
+                            <label>Let Us Hear You !</label>
+
+                            <textarea rows="8" cols="80" placeholder="Enter Your Message"></textarea>
+
+                            <select class="user-type" name="user_type">
+                                <option>Student</option>
+                                <option>Instructor</option>
+                                <option>Business</option>
+                            </select>
+                        </div>
+
+                        <div class="clear-fix"></div>
+
+                        <input type="submit" value="Sign Up" class="main-btn" id="submitBtn" name="signup_btn"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Sign Up Form -->
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
